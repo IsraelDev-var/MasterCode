@@ -1,0 +1,25 @@
+/* modelo de caja flesible */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --primary: #0075ff;
+    --secund: #032349;
+    --bg2: #2A556C;
+    --color-card: #BDBCA4;
+    --bg1: #ffffff;
+}
+
+.navbar-brand {
+    background-image: url(/src/images/logo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 175px;
+    height: 34px;
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+}
