@@ -1,25 +1,195 @@
+/* fuente de letra */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* modelo de caja flesible */
 *{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
 
     --primary: #0075ff;
     --secund: #032349;
+    --third: #EFEFEF;
     --bg2: #2A556C;
     --color-card: #BDBCA4;
     --bg1: #ffffff;
+    --text-color: hsl(0, 0%, 35%);
+}
+.header-container{
+    position: relative;
+    background: #0075FF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.navbar{
+    background: var(--bg1);
+    
+    box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+    width: 100vw;
+    /* height: 72px; */
+    position: fixed;
+    display: flex;
+    
+
 }
 
 .navbar-brand {
-    background-image: url(/src/images/logo1.png);
+    background-image: url(/src/assets/images/logo1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 175px;
-    height: 34px;
+    width: 205px;
+    height: 24px;
+    /* background-color: aqua; */
+}
+.containers{
+    
+    height: 95vh;
+    
+    width: 90vw;
+    
+    
+    
+}
+/*----------------- home ------------------ */
+.home{
+    padding-top: 60px;
+    background: var(--bg1);
+    /* background: #000; */
     display: flex;
-    background-color: aqua;
+    flex-direction: column;
+    
+    
+
+}
+.center{
+    display: flex;
+    flex-direction: column;
+
+    
+    width: 100vw;
+
+    /* background: #0075FF; */
+    height: 100vh;
+    margin: 0.5rem;
+}
+
+.home-title-container{
+    max-width:685;
+}
+.home-title{
+    font-size: 38px;
+    font-family: kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+}
+.home-title-resalt{
+    color: var(--primary);
+}
+
+.home-contaner-img{
+    
+    background-image: url(/src/assets/images/imgHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 298px;
+    
+    /* background: #032349; */
+    
+}
+
+
+
+
+/*--------------- parte de el centro--------------- */
+
+
+.mid-t{
+    height: 550px;
+    width: 100%;
+    background-color: var(--third);
+}
+
+.text-mid{
+    font-family: "Kanit", sans-serif;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    line-height: 0.9;
+    color: #BDBCA4;
+}
+
+.info{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+
+
+.cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
+    width: 200px;
+    height: 300px;
+    background-color: var(--color-card);
+}
+
+
+@media (max-width: 768px) {
+    .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+.footer{
+    background: linear-gradient(90deg, #093DF4, #0075FF);
+    width: 100%;
+    height: 250px;
+}
+
+.last-text{
+    color: var(--bg1);
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    line-height: 0.9;
+    
+}
+.footer-p{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;  
+    justify-content: center;  
     align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+    display: inline-block
+}
+
+.boton{
+    color: var(--bg1);
+    padding: 5px 50px;
+    text-decoration: none;
+    border: 2px solid var(--bg1);
+    display: inline-block
+}
+
+.boton:hover {
+    background-color: var(--secund);
 }
