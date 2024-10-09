@@ -50,7 +50,7 @@ html {
 }
 
 .navbar-brand {
-    background-image: url(/src/assets/images/logo1.png);
+    background-image: url(/src/images/logo1.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 205px;
@@ -59,22 +59,28 @@ html {
 }
 .containers{
     
-    height: 95vh;
+    height: 100vh;
     
-    width: 90vw; 
+    width: 100vw; 
     
 }
 /*----------------- home ------------------ */
 .home{
-    padding-top: 60px;
+    
     background: var(--bg1);
     /* background: #000; */
     display: flex;
     flex-direction: column;
-    
+    justify-items: center;
+    gap: 2em;
+    /* margin:4px; */
+    padding: 4px;
+    padding-top: 50px;
     
 
 }
+
+
 
 
 /*----------------- home ------------------ error en este bloque
@@ -105,9 +111,10 @@ html {
 
 .home-contaner-img{
     
-    background-image: url(/src/assets/images/imgHeader.png);
+    background-image: url(/src/images/imgHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
     height: 298px;
     
     /* background: #032349; */
