@@ -121,13 +121,13 @@ html {
     display: flex;
     flex-wrap: wrap;
     padding: 5px 40px;
-    justify-content: space-between;
     margin-top: 20px;
+    justify-content: space-between;
+
 }
 
-
 .mid-t {
-    height: 550px;
+    height: 7   50px;
     width: 100%;
     background-color: var(--third);
     padding-top: 20px; /* Añadir padding superior */
@@ -141,13 +141,15 @@ html {
     font-family: "Kanit", sans-serif;
     line-height: 0.9;
     color: #BDBCA4;
+    margin: 0 25px 0 25px;
 }
 
 
 .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
-    width: 200px;
-    height: 300px;
+    width: 270px;
+    height: 410px;
     background-color: var(--color-card);
+    padding: 20px;
 }
 
 @media (max-width: 950px) {
@@ -156,7 +158,7 @@ html {
         margin: 25px 0;
     }
     .mid-t{
-        height: 1700px;
+        height: 2205px;
         margin-top: -20px
     }   
     .footer-p{
@@ -164,6 +166,15 @@ html {
     }
 }
 
+.icon-contenedor{
+    display: flex;      
+    justify-content: center;     
+}
+
+.texto-cajas{
+    font-family: "Kanit", sans-serif;
+    font-size: 18.5px;
+}
 
 
 /*--------------foother---------------*/
