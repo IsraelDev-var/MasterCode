@@ -23,6 +23,8 @@ html {
     --bg1: #ffffff;
     --text-color: hsl(0, 0%, 35%);
 }
+
+
 .header-container{
     position: relative;
     background: #0075FF;
@@ -33,6 +35,7 @@ html {
     align-items: center;
 
 }
+
 
 .navbar{
     background: var(--bg1);
@@ -58,9 +61,7 @@ html {
     
     height: 95vh;
     
-    width: 90vw;
-    
-    
+    width: 90vw; 
     
 }
 /*----------------- home ------------------ */
@@ -74,6 +75,10 @@ html {
     
 
 }
+
+
+/*----------------- home ------------------ error en este bloque
+
 .center{
     display: flex;
     flex-direction: column;
@@ -81,11 +86,11 @@ html {
     
     width: 100vw;
 
-    /* background: #0075FF; */
+    background: #0075FF; 
     height: 100vh;
     margin: 0.5rem;
 }
-
+*/
 .home-title-container{
     max-width:685;
 }
@@ -109,16 +114,23 @@ html {
     
 }
 
-
-
-
 /*--------------- parte de el centro--------------- */
 
 
-.mid-t{
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 40px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.mid-t {
     height: 550px;
     width: 100%;
     background-color: var(--third);
+    padding-top: 20px; /* Añadir padding superior */
 }
 
 .text-mid{
@@ -131,15 +143,6 @@ html {
     color: #BDBCA4;
 }
 
-.info{
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
-}
-
-
 
 .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
     width: 200px;
@@ -147,13 +150,23 @@ html {
     background-color: var(--color-card);
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
-        width: 100%; 
-        margin-bottom: 20px; 
+        width: 100%;
+        margin: 25px 0;
+    }
+    .mid-t{
+        height: 1700px;
+        margin-top: -20px
+    }   
+    .footer-p{
+        padding: 0;
     }
 }
+
+
+
+/*--------------foother---------------*/
 
 .footer{
     background: linear-gradient(90deg, #093DF4, #0075FF);
