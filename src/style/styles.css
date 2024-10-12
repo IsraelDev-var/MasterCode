@@ -202,11 +202,10 @@ html {
 
 
 .home-contaner-img{
-    
     background-image: url(/src/images/imgHeader.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: contain;
+    background-position: center center;
     height: 298px;
     display: flex;
     justify-content: flex-end;
@@ -240,7 +239,7 @@ html {
     flex-wrap: wrap;
     padding: 5px 40px;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 500px;
 }
 
@@ -256,7 +255,7 @@ html {
     font-family: "Kanit", sans-serif;
     padding-top: 60px;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 45px;
     line-height: 0.9;
     color: #BDBCA4;
     margin: 0 25px 0 25px;
@@ -269,7 +268,6 @@ html {
     height: 450px;
     background-color: var(--color-card);
     padding: 20px;
-    margin: 20px 1px;    
 }
 
 
@@ -283,16 +281,30 @@ html {
     }
 }
 
+
+@media (max-width: 1290px) {
+    .mid-t{
+        height: 1290px;
+    }   
+    .home-contaner-img{
+        height: 200vw;
+    }
+    
+}
+
+
 @media (max-width: 840px) {
     .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
         width: 100%;
-        margin: 25px 0;
     }
     .mid-t{
-        height: 2225px;
+        height: 2440px;
     }   
     .footer-p{
         padding: 0;
+    }
+    .home-contaner-img{
+        height: 200vw;
     }
 }
 
