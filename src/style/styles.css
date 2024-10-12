@@ -50,11 +50,11 @@ html {
 }
 
 .navbar-brand {
-    background-image: url(/src/images/logo1.png);
+    background-image: url(/src/images/logo3.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 205px;
-    height: 24px;
+    height: 44px;
     /* background-color: aqua; */
 }
 
@@ -390,6 +390,14 @@ html {
     }
     .home-title{
         font-size: 64px;
+    }
+    .navbar-brand {
+        background-image: url(/src/images/logo1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 205px;
+        height: 24px;
+        /* background-color: aqua; */
     }
     
 
