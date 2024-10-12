@@ -22,6 +22,7 @@ html {
     --color-card: #BDBCA4;
     --bg1: #ffffff;
     --text-color: hsl(0, 0%, 35%);
+    --font-fam: kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 
@@ -101,11 +102,11 @@ html {
 
   .card {
     width: 100%;
-    background: var(--bg1);
+   
    
     /* border-radius: 24px; */
     box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
-    padding: 4px;
+    /* padding: 4px; */
     
     
     /*  */
@@ -174,7 +175,8 @@ html {
 
 
 .card > img{
-    width: 100%;
+    min-width: 50px;
+    max-width:100px;
 }
 
 
@@ -225,30 +227,30 @@ html {
 
 }*/
 
-.img-header{
-    width: 50vw;    /* 100% del ancho de la ventana */
-    height: 50vh;   /* 100% de la altura de la ventana */
+/* .img-header{
+    width: 50vw;    /* 100% del ancho de la ventana 
+    height: 50vh;   /* 100% de la altura de la ventana 
     object-fit: cover;
-}
+} */
 
 
 /*--------------- parte de el centro--------------- */
 
 
-.info{
+/* .info{
     display: flex;
     flex-wrap: wrap;
     padding: 5px 40px;
     margin-top: 20px;
     justify-content: space-between;
-    height: 500px;
+    height: 100vh;
 }
 
 .mid-t {
     height: 750px;
     width: 100%;
     background-color: var(--third);
-    padding-top: 20px; /* Añadir padding superior */
+    padding-top: 20px; /* Añadir padding superior 
     margin-top: 15px;
 }
 
@@ -256,11 +258,11 @@ html {
     font-family: "Kanit", sans-serif;
     padding-top: 60px;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 0.9;
     color: #BDBCA4;
     margin: 0 25px 0 25px;
-}
+} 
 
 
 
@@ -270,48 +272,85 @@ html {
     background-color: var(--color-card);
     padding: 20px;
     margin: 20px 1px;    
-}
+} */
 
 
-@media (max-width: 1515px) {
+
+
+
+/* @media (max-width: 1515px) {
     .mid-t{
         height: 1210px;
     } 
 
-    .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
+    /* .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
         margin: 20px;
-    }
-}
+    } 
+} */
 
-@media (max-width: 840px) {
-    .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
+/* @media (max-width: 840px) {
+    /* .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
         width: 100%;
         margin: 25px 0;
-    }
+    } 
     .mid-t{
         height: 2225px;
     }   
     .footer-p{
         padding: 0;
     }
+} */
+
+
+
+/* service  */
+
+.services-container{
+    background: var(--bg1);
+    padding-top: 30px;
+}
+.services{
+    padding: 3em;
+    display: grid;
+    gap: 2em;
+    
+    /* background: #000; */
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 }
 
+.item-card {
+    padding: 2em;
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    /* background: #032349; */
+    background: var(--color-card);
+    
+
+}
+.service-title{
+    font-size: 20px;
+    font-family: kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
 
 
 
 .icon-contenedor{
     display: flex;      
-    justify-content: center;     
+    justify-content: center;    
+    color: var(--text-color); 
 }
 
 .titulo-cajas{
     font-family: "Kanit", sans-serif;
-    font-size: 21px;
+    font-size: 20px;
+    color: var(--text-color); 
 }
 
 .texto-cajas{
     font-family: "Kanit", sans-serif;
-    font-size: 21px;
+    font-size: 20px;
+    color: var(--text-color); 
 }
 
 
@@ -321,14 +360,17 @@ html {
 .footer{
     background: linear-gradient(90deg, #093DF4, #0075FF);
     width: 100%;
-    height: 250px;
+    height: 404px;
+    display: grid;
+    place-items: center;
+
 }
 
 .last-text{
     color: var(--bg1);
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 34px;
     font-family: "Kanit", sans-serif;
     line-height: 0.9;
     
@@ -345,15 +387,19 @@ html {
     display: inline-block
 }
 
-.boton{
-    color: var(--bg1);
-    padding: 5px 50px;
+.button{
+    /* padding: 10px 70px; */
+    font-size:20px ;
+    height: 37px;
+    width: 250px;
     text-decoration: none;
-    border: 2px solid var(--bg1);
-    display: inline-block
+    background: none;
+    border: 1px solid var(--bg1);
+    color: var(--bg1);
+
 }
 
-.boton:hover {
+.button:hover {
     background-color: var(--secund);
 }
 
@@ -391,6 +437,7 @@ html {
     .home-title{
         font-size: 64px;
     }
+    
     .navbar-brand {
         background-image: url(/src/images/logo1.png);
         background-repeat: no-repeat;
@@ -399,8 +446,28 @@ html {
         height: 24px;
         /* background-color: aqua; */
     }
-    
 
+    /* sevices */
+    .service-title{
+        font-size: 34px;
+        color: var(--text-color);
+    }
+
+
+
+    .button{
+        /* padding: 10px 70px; */
+        font-size:30px ;
+        height: 57px;
+        width: 440px;
+        text-decoration: none;
+        background: none;
+        border: 1px solid var(--bg1);
+        color: var(--bg1);
+    
+    }
+    
+    
     
 }
 
