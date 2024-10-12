@@ -57,6 +57,8 @@ html {
     height: 24px;
     /* background-color: aqua; */
 }
+
+/* tiene problemas
 .containers{
     
     height: 95vh;
@@ -64,6 +66,8 @@ html {
     width: 90vw; 
     
 }
+
+*/
 /*----------------- home ------------------ */
 .home{
     padding-top: 60px;
@@ -71,9 +75,6 @@ html {
     /* background: #000; */
     display: flex;
     flex-direction: column;
-    
-    
-
 }
 
 
@@ -95,6 +96,7 @@ html {
     max-width:685;
 }
 .home-title{
+    
     font-size: 38px;
     font-family: kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 
@@ -103,16 +105,44 @@ html {
     color: var(--primary);
 }
 
+.center-home{
+    height: 620px;
+    padding: 20px;
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
 .home-contaner-img{
     
     background-image: url(/src/assets/images/imgHeader.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 298px;
-    
-    /* background: #032349; */
+    display: flex;
+    justify-content: flex-end;
     
 }
+
+
+
+.imgsly{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+
+}
+
+.img-header{
+    width: 50vw;    /* 100% del ancho de la ventana */
+    height: 50vh;   /* 100% de la altura de la ventana */
+    object-fit: cover;
+}
+
 
 /*--------------- parte de el centro--------------- */
 
@@ -127,10 +157,11 @@ html {
 }
 
 .mid-t {
-    height: 7   50px;
+    height: 750px;
     width: 100%;
     background-color: var(--third);
     padding-top: 20px; /* Añadir padding superior */
+    margin-top: 15px;
 }
 
 .text-mid{
@@ -138,7 +169,6 @@ html {
     padding-top: 60px;
     padding-bottom: 10px;
     font-size: 30px;
-    font-family: "Kanit", sans-serif;
     line-height: 0.9;
     color: #BDBCA4;
     margin: 0 25px 0 25px;
@@ -146,35 +176,55 @@ html {
 
 
 .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
-    width: 270px;
-    height: 410px;
+    width: 340px;
+    height: 450px;
     background-color: var(--color-card);
     padding: 20px;
+    margin: 20px 1px;    
 }
 
-@media (max-width: 950px) {
+
+@media (max-width: 1515px) {
+    .mid-t{
+        height: 1210px;
+    } 
+
+    .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 840px) {
     .cuadro-gestion, .cuadro-sistema, .cuadro-commerce, .cuadro-desarrollo {
         width: 100%;
         margin: 25px 0;
     }
     .mid-t{
-        height: 2205px;
-        margin-top: -20px
+        height: 2225px;
     }   
     .footer-p{
         padding: 0;
     }
 }
 
+
+
+
 .icon-contenedor{
     display: flex;      
     justify-content: center;     
 }
 
+.titulo-cajas{
+    font-family: "Kanit", sans-serif;
+    font-size: 21px;
+}
+
 .texto-cajas{
     font-family: "Kanit", sans-serif;
-    font-size: 18.5px;
+    font-size: 21px;
 }
+
 
 
 /*--------------foother---------------*/
