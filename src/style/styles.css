@@ -204,11 +204,10 @@ html {
 
 
 .home-contaner-img{
-    
     background-image: url(/src/images/imgHeader.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: contain;
+    background-position: center center;
     height: 298px;
     display: flex;
     justify-content: flex-end;
@@ -294,7 +293,7 @@ html {
         margin: 25px 0;
     } 
     .mid-t{
-        height: 2225px;
+        height: 2440px;
     }   
     .footer-p{
         padding: 0;
