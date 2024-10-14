@@ -439,12 +439,15 @@ html {
     text-align: center;
     display: block;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 50px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-
 }
 
+
+.relative-div{
+    position: relative;
+    top:100px;
+}
 .img-footer{
     width: 173px;
     height: 23px;
@@ -484,9 +487,7 @@ html {
     overflow: hidden;
 }
 
-
-
-
 .space{
     height: 80px;
 }
+
