@@ -237,9 +237,9 @@ html {
 
 }
 .service-title{
-    font-size: 20px;
-    font-family: kanit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    font-size: 34px;
+    color: var(--text-color);
+    text-align: center;
 }
 
 
@@ -316,9 +316,9 @@ html {
 
 .button{
     /* padding: 10px 70px; */
-    font-size:30px ;
+    font-size:20px ;
     height: 57px;
-    width: auto;
+    width: 240px;
     text-decoration: none;
     background: none;
     border: 1px solid var(--bg1);
@@ -456,7 +456,7 @@ html {
 
 .relative-div{
     position: relative;
-    top:100px;
+    top:55px;
 }
 .img-footer{
     width: 173px;
