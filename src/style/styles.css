@@ -46,7 +46,7 @@ html {
     /* height: 72px; */
     position: fixed;
     display: flex;
-    
+    z-index: 1;
 
 }
 
@@ -153,8 +153,7 @@ html {
   .group {
     /* ... */
     will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
-    animation: scrolling 10s linear infinite;
-  }
+}
 
   @keyframes scrolling {
     0% {
@@ -234,7 +233,7 @@ html {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     /* background: #032349; */
     background: var(--color-card);
-    
+    border-radius: 10px;
 
 }
 .service-title{
@@ -315,7 +314,18 @@ html {
 }
 
 
+.button{
+    /* padding: 10px 70px; */
+    font-size:30px ;
+    height: 57px;
+    width: auto;
+    text-decoration: none;
+    background: none;
+    border: 1px solid var(--bg1);
+    color: var(--bg1);
+    border-radius: 63px;
 
+}
 
 
 
